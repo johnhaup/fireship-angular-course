@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<button [disabled]="clicked" (click)="handleClick()">Click Me</button>
+
+<div *ngIf="clicked">
+  <h3>{{ surprise }}</h3>
+</div>
+
+<div *ngFor="let album of albums">
+  <h3>{{ album.name }}</h3>
+  <img [src]="album.image" width="400px" />
+  <p>Released in {{ album.year }}</p>
+</div>
