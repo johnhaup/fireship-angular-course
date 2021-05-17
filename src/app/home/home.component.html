@@ -5,7 +5,7 @@
   <h3>{{ surprise }}</h3>
 </div>
 
-<div *ngFor="let album of albums">
+<div *ngFor="let album of albums | async">
   <h3
     [ngClass]="{
       blue: album.name === 'Hormoaning',

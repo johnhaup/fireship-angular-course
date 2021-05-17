@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ export class HomeComponent {
   title = `ANGULAR ${VERSION.full} is the version used in this cool app.`;
   surprise = 'You clicked the button, silly';
 
-  albums = [
+  albums = of([
     {
       name: 'Hormoaning',
       year: '1992',
@@ -21,7 +22,7 @@ export class HomeComponent {
       year: '1993',
       image: 'assets/nirvana-in-utero.jpeg',
     },
-  ];
+  ]);
 
   handleClick(): void {
     this.clicked = true;
