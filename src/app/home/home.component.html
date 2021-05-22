@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<button [disabled]="clicked" (click)="handleClick()">Click Me</button>
+
+<div *ngIf="clicked">
+  <h3>{{ surprise }}</h3>
+</div>
+
+<div *ngFor="let album of albums | async">
+  <app-album [album]="album"></app-album>
+</div>
