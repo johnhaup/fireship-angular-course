@@ -7,6 +7,7 @@ import {
   VERSION,
 } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { ClockService } from '../clock.service';
 
 @Component({
   selector: 'app-home',
@@ -21,10 +22,11 @@ export class HomeComponent
   title = `ANGULAR ${VERSION.full} is the version used in this cool app.`;
   surprise = 'You clicked the button, silly';
 
-  constructor() {}
+  constructor(public cs: ClockService) {}
 
   ngOnInit(): void {
     // Where you do all your lifecycle setup aka componentDidMount aka useEffect
+    console.log(this.cs.tick);
     this.albums = of([
       {
         name: 'Hormoaning',
