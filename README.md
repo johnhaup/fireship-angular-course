@@ -19,9 +19,9 @@ Source code and course resources
 Introduction to the Angular CLI
 ~~**4 Anatomy**~~
 The purpose of every file in Angular
-**5 Components**
+~~**5 Components**~~
 An introduction to Components, Directives, and Pipes
-**6 Dependency Injection and Services**
+~~**6 Dependency Injection and Services**~~
 What is dependency injection (DI) and why is it so useful?
 **7 Modules**
 How NgModules help manage code and complexity
