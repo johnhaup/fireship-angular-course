@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { MagnifierDirective } from './magnifier.directive';
 import { AlbumComponent } from './album/album.component';
 import { CommonModule } from '@angular/common';
+import { CoolModule } from './cool/cool.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
     MagnifierDirective,
     AlbumComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, CoolModule],
   providers: [],
   bootstrap: [AppComponent],
 })

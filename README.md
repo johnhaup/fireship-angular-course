@@ -23,7 +23,7 @@ The purpose of every file in Angular
 An introduction to Components, Directives, and Pipes
 ~~**6 Dependency Injection and Services**~~
 What is dependency injection (DI) and why is it so useful?
-**7 Modules**
+~~**7 Modules**~~
 How NgModules help manage code and complexity
 
 #### App
