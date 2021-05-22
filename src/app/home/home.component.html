@@ -6,14 +6,5 @@
 </div>
 
 <div *ngFor="let album of albums | async">
-  <h3
-    [ngClass]="{
-      blue: album.name === 'Hormoaning',
-      yellow: album.name === 'In Utero'
-    }"
-  >
-    {{ album.name }}
-  </h3>
-  <img [src]="album.image" appMagnifier />
-  <p>Released in {{ album.year }}</p>
+  <app-album [album]="album"></app-album>
 </div>
